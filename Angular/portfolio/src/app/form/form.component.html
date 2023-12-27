@@ -1,0 +1,44 @@
+<div class="backgroundMain">
+    <div>
+      <input
+        class="formInput"
+        type="text"
+        placeholder=" Название компании"
+        name="companyName"
+        [(ngModel)]="formData.companyName"
+      />
+      <input
+        class="formInput"
+        type="text"
+        placeholder=" Дата собеседования"
+        name="interviewDate"
+        [(ngModel)]="formData.interviewDate"
+      />
+      <input
+        class="formInput"
+        type="text"
+        placeholder=" Предлагаемая должность"
+        name="proposedPosition"
+        [(ngModel)]="formData.proposedPosition"
+      />
+      <input
+        class="formInput"
+        type="text"
+        placeholder=" Email"
+        name="email"
+        [(ngModel)]="formData.email"
+      />
+      <input
+        class="formInput"
+        type="text"
+        placeholder=" Сайт компании"
+        name="companyWebsite"
+        [(ngModel)]="formData.companyWebsite"
+      />
+    </div>
+    <div class="formDiv">
+      <a type="button" class="HeaderButton" (click)="handleReset()">
+        Отправить
+      </a>
+    </div>
+  </div>
